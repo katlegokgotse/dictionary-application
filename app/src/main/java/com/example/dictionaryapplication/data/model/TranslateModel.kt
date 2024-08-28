@@ -9,6 +9,6 @@ data class Data(
 )
 
 data class Language(
+    val code: String,
     val language: String,
-    val name: String
 )
