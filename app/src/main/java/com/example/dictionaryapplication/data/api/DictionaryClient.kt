@@ -1,5 +1,6 @@
-package com.example.dictionaryapplication
+package com.example.dictionaryapplication.data.api
 
+import com.example.dictionaryapplication.data.service.DictionaryServices
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

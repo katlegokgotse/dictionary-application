@@ -1,4 +1,4 @@
-package com.example.dictionaryapplication
+package com.example.dictionaryapplication.data.model
 
 data class WordModel(
     val word: String,

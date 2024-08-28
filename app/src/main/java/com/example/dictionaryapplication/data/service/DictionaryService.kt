@@ -1,9 +1,9 @@
-package com.example.dictionaryapplication
+package com.example.dictionaryapplication.data.service
 
+import com.example.dictionaryapplication.data.model.WordModel
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
-import retrofit2.http.Query
 
 interface DictionaryServices {
     @GET("{word}")

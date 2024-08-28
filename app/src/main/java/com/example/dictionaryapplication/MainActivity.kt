@@ -1,16 +1,15 @@
 package com.example.dictionaryapplication
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.Dispatchers
+import com.example.dictionaryapplication.data.api.DictionaryApiClient
+import com.example.dictionaryapplication.data.model.WordModel
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
@@ -48,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                             findViewById<TextView>(R.id.txtWord).text = "Word not found"
                         }
                     }else{
-                        findViewById<TextView>(R.id.txtWord).text = "Harde buddy "
+                        findViewById<TextView>(R.id.txtWord).text = "Harde buddy"
                     }
                 }
                 override fun onFailure(p0: Call<List<WordModel>>, throwable: Throwable) {
